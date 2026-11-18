@@ -1,0 +1,607 @@
+# Словарь испанского с доски Holst «Esp». Формат: слово | перевод | тег (w — слово, p — фраза)
+@0 Приветствия и разговорные фразы
+hola | привет | w
+¿qué tal? | как дела? | p
+bien | хорошо | w
+muy bien | очень хорошо | p
+¿y tú? | а ты? | p
+¿cómo te llamas? | как тебя зовут? | p
+me llamo | меня зовут | p
+(yo) soy | я (по имени / откуда-то) | p
+encantado / encantada | очень приятно | p
+buenos días | доброе утро | p
+buenas tardes | добрый день | p
+buenas noches | добрый вечер | p
+hasta luego | до встречи | p
+hasta mañana | до завтра | p
+hasta la vista | до свидания | p
+adiós | прощай | w
+nos vemos | увидимся | p
+gracias | спасибо | w
+de nada | не за что | p
+vale | ладно, ок | w
+ah, vale | а, понятно | p
+qué bien | здорово | p
+en serio | серьёзно? / правда? | p
+no lo sé | не знаю | p
+ni idea | понятия не имею | p
+no recuerdo | не помню | p
+no estoy seguro/a | я не уверен(а) | p
+menos mal | хорошо хоть, слава богу | p
+es lo que hay | ничего не поделаешь | p
+qué envidia | как я завидую! | p
+qué pena | как жаль | p
+qué vergüenza | какой стыд | p
+no pasa nada | ничего страшного | p
+tranquilo/a | спокойно | p
+salud / jesús | будь здоров (после чиха) | p
+madre mía | боже мой | p
+qué escándalo | какой скандал | p
+qué locura | какое безумие | p
+qué horror | какой ужас | p
+qué aburrido | как скучно | p
+vaya | ну надо же | w
+claro | конечно | w
+ojalá | хотелось бы | w
+feliz cumpleaños | с днём рождения | p
+feliz Navidad / feliz Año Nuevo | с Рождеством / с Новым годом | p
+¿qué pasa? | что случилось? | p
+¿qué significa? | что это значит? | p
+¿cómo se dice? | как сказать (по-испански)? | p
+¿cómo se escribe? | как это пишется? | p
+la pregunta | вопрос | p
+estoy de acuerdo | я согласен(на) | p
+es verdad / es falso | правда / неправда | p
+a mí también | мне тоже | p
+a mí tampoco | мне тоже нет | p
+a mí sí | а мне да | p
+a mí no | а мне нет | p
+yo también | я тоже | p
+sí / no | да / нет | p
+o | или | w
+y / e | и | p
+pero | но | w
+con | с | w
+sin | без | w
+también | тоже | w
+tampoco | тоже (не) | w
+muy | очень | w
+un poco | немного | p
+un poquito | чуть-чуть | p
+bastante | довольно | w
+más o menos | более-менее | p
+mucho | много | w
+poco | мало | w
+ahora | сейчас | w
+una vez | один раз | p
+otra vez | ещё раз | p
+a veces | иногда | p
+cada día / todos los días | каждый день | p
+siempre | всегда | w
+nunca | никогда | w
+primero | сначала | w
+luego | потом | w
+después | после, потом | w
+después de | после (чего-то) | p
+antes de | перед | p
+normalmente | обычно | w
+por eso | поэтому | p
+porque | потому что | w
+¿por qué? | почему? | p
+cuando | когда | w
+donde | где | w
+algo | что-то | w
+nada | ничего | w
+juntos | вместе | w
+solo | один; только | w
+así | так | w
+así así | так себе | p
+temprano | рано | w
+tarde | поздно | w
+puede ser | может быть | p
+en general | в общем | p
+en mi opinión | по-моему | p
+por ejemplo | например | p
+lo mismo | то же самое | p
+no importa | не важно | p
+me da pereza | мне лень | p
+es raro | это странно | p
+es normal | это нормально | p
+difícil | сложный | w
+fácil | лёгкий | w
+¿de dónde eres? | откуда ты? | p
+¿cuántos años tienes? | сколько тебе лет? | p
+¿quién es? / ¿quiénes son? | кто он? / кто они? | p
+¿qué haces? | что ты делаешь? | p
+dame tu número de teléfono | дай мне номер телефона | p
+tutear | говорить на «ты» | w
+@1 Страны, национальности и города
+España | Испания | w
+Rusia | Россия | w
+China | Китай | w
+Argentina | Аргентина | w
+Japón | Япония | w
+Francia | Франция | w
+Perú | Перу | w
+Colombia | Колумбия | w
+Corea | Корея | w
+Turquía | Турция | w
+Italia | Италия | w
+Australia | Австралия | w
+Austria | Австрия | w
+Inglaterra | Англия | w
+Estados Unidos | США | p
+Alemania | Германия | w
+Noruega | Норвегия | w
+Egipto | Египет | w
+Brasil | Бразилия | w
+México | Мексика | w
+Vietnam | Вьетнам | w
+español / española | испанец / испанка | p
+ruso / rusa | русский / русская | p
+chino / china | китаец / китаянка | p
+inglés / inglesa | англичанин / англичанка | p
+turco / turca | турок / турчанка | p
+japonés / japonesa | японец / японка | p
+francés / francesa | француз / француженка | p
+estadounidense | американец / американка | w
+mexicano / mexicana | мексиканец / мексиканка | p
+el país | страна | p
+la ciudad | город | p
+la nacionalidad | национальность | p
+la lengua / el idioma | язык | p
+lenguas extranjeras | иностранные языки | p
+castellano | кастильский (испанский) язык | w
+Madrid | Мадрид | w
+Barcelona | Барселона | w
+Moscú | Москва | w
+@2 Семья и люди
+la familia | семья | p
+los miembros de la familia | члены семьи | p
+madre / mamá | мама / мать | p
+padre / papá | папа / отец | p
+padres | родители | w
+hermano / hermana | брат / сестра | p
+hermanos | братья и сёстры | w
+abuelo / abuela | дедушка / бабушка | p
+abuelos | дедушка и бабушка | w
+hijo / hija | сын / дочь | p
+hijos | дети | w
+esposo / esposa | муж / жена (супруги) | p
+marido | муж | w
+mujer | жена; женщина | w
+hombre | мужчина | w
+novio / novia | парень / девушка | p
+estar casado / casada | быть женатым / замужем | p
+soltero / soltera | холостой / незамужняя | p
+primo / prima | двоюродный брат / сестра | p
+tío / tía | дядя / тётя | p
+vecino / vecina | сосед / соседка | p
+compañero / compañera | коллега, одноклассник | p
+amigo / amiga | друг / подруга | p
+la gente | люди | p
+el niño / la niña | ребёнок | p
+el chico / la chica | парень / девушка | p
+@3 Еда и напитки
+la comida | еда; обед | p
+el vino | вино | p
+el vino tinto / blanco | красное / белое вино | p
+la cerveza | пиво | p
+el café | кофе | p
+café con leche / sin leche | кофе с молоком / чёрный | p
+el té | чай | p
+el agua | вода | p
+el zumo | сок | p
+el pescado | рыба | p
+la carne | мясо | p
+el bistec | бифштекс | p
+el pollo | курица | p
+la tortilla de patatas | картофельная тортилья | p
+las tapas | тапас (закуски) | p
+ir de tapas | ходить по барам на тапас | p
+las croquetas | крокеты | p
+las aceitunas | оливки | p
+los calamares | кальмары | p
+el jamón | хамон | p
+el queso | сыр | p
+las gambas | креветки | p
+las patatas bravas | жареная картошка брава | p
+la sopa | суп | p
+la ensalada | салат | p
+el bocadillo | сэндвич | p
+la tostada | тост | p
+el aguacate | авокадо | p
+la fruta | фрукты | p
+las verduras | овощи | p
+el marisco | морепродукты | p
+los dulces | сладости | p
+las uvas | виноград | p
+la pizza | пицца | p
+el sushi | суши | p
+las arepas | арепы (кукурузные лепёшки) | p
+el desayuno | завтрак | p
+la cena | ужин | p
+desayunar | завтракать | w
+cenar | ужинать | w
+cenar fuera / en casa | ужинать вне дома / дома | p
+comer | есть, обедать | w
+beber | пить | w
+el hambre | голод | p
+el hielo | лёд | p
+el camarero / la camarera | официант / официантка | p
+gratis | бесплатно | w
+la cuenta / la factura | счёт | p
+@4 Одежда и покупки
+la ropa | одежда | p
+la camiseta | футболка | p
+la camiseta de tirantes / el top | майка, топ | p
+la camisa | рубашка | p
+la falda | юбка | p
+el vestido | платье | p
+el jersey | джемпер | p
+la blusa | блузка | p
+los pantalones | брюки | p
+los pantalones cortos | шорты | p
+los vaqueros | джинсы | p
+los zapatos | туфли, обувь | p
+las zapatillas | кроссовки | p
+los zapatos de tacón | туфли на каблуке | p
+la chaqueta | куртка, пиджак | p
+la sudadera | толстовка, свитшот | p
+el bolso | сумка | p
+la mochila | рюкзак | p
+la bolsa (de tela) | пакет, шоппер | p
+los calcetines | носки | p
+la gorra | кепка | p
+el sombrero | шляпа | p
+el abrigo | пальто | p
+el traje | костюм | p
+el mono | комбинезон | p
+el bañador | купальник | p
+las chanclas | шлёпанцы | p
+la toalla | полотенце | p
+el sujetador | бюстгальтер | p
+los leggins | легинсы | p
+las botas | ботинки, сапоги | p
+los bolsillos | карманы | p
+la moda | мода | p
+rojo / roja | красный | p
+azul | синий | w
+verde | зелёный | w
+amarillo / amarilla | жёлтый | p
+blanco / blanca | белый | p
+negro / negra | чёрный | p
+gris | серый | w
+marrón | коричневый | w
+morado / morada | фиолетовый | p
+rosa | розовый | w
+naranja | оранжевый | w
+beige | бежевый | w
+de flores | в цветочек | p
+transparente | прозрачный | w
+largo / larga | длинный | p
+corto / corta | короткий | p
+cómodo / cómoda | удобный | p
+llevar | носить, нести | w
+ponerse | надевать | w
+comprar | покупать | w
+ir de compras | идти за покупками | p
+la talla | размер (одежды) | p
+el número | размер (обуви) | p
+¿cuál es tu talla? | какой у тебя размер? | p
+te queda bien | тебе идёт | p
+no me quedan bien | мне не идут | p
+caro / cara | дорогой | p
+barato / barata | дешёвый | p
+¿cuánto cuesta(n)? | сколько стоит(ят)? | p
+¿puedo pagar con tarjeta? | можно картой? | p
+¿puedo pagar en efectivo? | можно наличными? | p
+¿qué te parece? | как тебе (нравится)? | p
+este / esta / estos / estas | этот / эта / эти | p
+@5 Внешность и характер
+el aspecto físico | внешность | p
+alto / alta | высокий | p
+bajo / baja | низкий | p
+gordo / gorda | толстый | p
+delgado / delgada | худой | p
+guapo / guapa | красивый | p
+feo / fea | некрасивый | p
+joven | молодой | w
+viejo / vieja | старый | p
+mayor | старший, пожилой | w
+rubio / rubia | блондин(ка) | p
+moreno / morena | брюнет(ка), смуглый | p
+pelirrojo / pelirroja | рыжий | p
+el pelo | волосы | p
+el pelo largo / corto | длинные / короткие волосы | p
+la barba | борода | p
+el bigote | усы | p
+las gafas (de sol) | очки (солнцезащитные) | p
+los ojos | глаза | p
+bonito / bonita | симпатичный | p
+elegante | элегантный | w
+el carácter | характер | p
+simpático / simpática | приятный, милый | p
+antipático / antipática | неприятный | p
+serio / seria | серьёзный | p
+divertido / divertida | весёлый | p
+alegre | радостный, жизнерадостный | w
+optimista | оптимист | w
+pesimista | пессимист | w
+trabajador / trabajadora | трудолюбивый | p
+sociable | общительный | w
+tímido / tímida | застенчивый | p
+aburrido / aburrida | скучный | p
+perezoso / perezosa (vago) | ленивый | p
+grosero / grosera | грубый | p
+responsable | ответственный | w
+amable | любезный | w
+reservado / reservada | замкнутый | p
+inteligente | умный | w
+listo / lista | умный, сообразительный | p
+loco / loca | сумасшедший | p
+triste | грустный | w
+cansado / cansada | уставший | p
+popular | популярный | w
+famoso / famosa | известный | p
+típico / típica | типичный | p
+productivo / productiva | продуктивный | p
+relajado / relajada | расслабленный | p
+me cae bien / no me cae bien | (не) нравится как человек | p
+@6 Глаголы
+hablar | говорить | w
+trabajar | работать | w
+pasear | гулять | w
+cantar | петь | w
+estudiar | учить, изучать | w
+cocinar | готовить | w
+viajar | путешествовать | w
+bailar | танцевать | w
+escuchar | слушать | w
+descansar | отдыхать | w
+teletrabajar | работать удалённо | w
+nadar | плавать | w
+pintar | рисовать | w
+jugar | играть | w
+ayudar | помогать | w
+mejorar | улучшать(ся) | w
+fumar | курить | w
+patinar | кататься (на коньках/роликах) | w
+navegar (por Internet) | сидеть в интернете | p
+esquiar | кататься на лыжах | w
+probar | пробовать | w
+visitar | посещать | w
+tomar | брать; пить (кроме алкоголя) | w
+tomar el sol | загорать | p
+quedar | договариваться о встрече | w
+saludar | здороваться | w
+celebrar | отмечать | w
+decorar | украшать | w
+llevar | носить; отвозить | w
+llamar | звать; звонить | w
+levantar | поднимать | w
+beber | пить | w
+leer | читать | w
+comer | есть | w
+ver | смотреть | w
+ser | быть (постоянное качество) | w
+estar | быть, находиться (состояние) | w
+tener | иметь | w
+hacer | делать | w
+poder | мочь | w
+volver | возвращаться | w
+vender | продавать | w
+creer | думать, верить | w
+aprender | учить(ся) | w
+entender | понимать | w
+llover (llueve) | идти (о дожде) | p
+nevar (nieva) | идти (о снеге) | p
+vivir | жить | w
+escribir | писать | w
+ir | идти, ехать | w
+salir | выходить; гулять | w
+dormir | спать | w
+venir | приходить | w
+decir | сказать | w
+empezar | начинать(ся) | w
+pensar | думать | w
+querer | хотеть; любить | w
+saber | знать | w
+gustar | нравиться | w
+encantar | очень нравиться | w
+llamarse | называться, зваться | w
+levantarse | вставать | w
+ducharse | мыться, принимать душ | w
+acostarse | ложиться спать | w
+despertarse | просыпаться | w
+irse | уходить | w
+relajarse | расслабляться | w
+olvidarse | забываться (se me olvida — я забываю) | w
+reunirse | собираться, встречаться | w
+tener que + инфинитив | быть должным (сделать) | p
+poder + инфинитив | мочь (сделать) | p
+ir a + инфинитив | собираться (сделать) | p
+@7 Рутина, время, числа
+la rutina diaria | распорядок дня | p
+despertarse | просыпаться | w
+me levanto | я встаю | p
+me ducho | я моюсь | p
+desayuno | завтракаю | w
+voy al trabajo | еду на работу | p
+tengo un descanso | у меня перерыв | p
+como | обедаю | w
+llego a casa | прихожу домой | p
+preparo la cena | готовлю ужин | p
+ceno | ужинаю | w
+me acuesto | ложусь спать | p
+dormir la siesta | спать днём (сиеста) | p
+el horario | расписание | p
+la hora | время, час | p
+¿a qué hora? | во сколько? | p
+a la una | в час | p
+a las dos / tres... | в два / три... | p
+y media | половина (…:30) | p
+y cuarto | четверть (…:15) | p
+de la mañana | утра (до полудня) | p
+de la tarde | дня, вечера | p
+de la noche | ночи | p
+mediodía | полдень | w
+medianoche | полночь | w
+por la mañana | утром | p
+por la tarde | днём, вечером | p
+por la noche | ночью, вечером | p
+el día | день | p
+la noche | ночь | p
+la semana | неделя | p
+el fin de semana | выходные | p
+los fines de semana | по выходным | p
+hoy | сегодня | w
+el lunes | понедельник | p
+el martes | вторник | p
+el miércoles | среда | p
+el jueves | четверг | p
+el viernes | пятница | p
+el sábado | суббота | p
+el domingo | воскресенье | p
+las temporadas | времена года | p
+el invierno | зима | p
+la primavera | весна | p
+el verano | лето | p
+el otoño | осень | p
+enero | январь | w
+febrero | февраль | w
+marzo | март | w
+abril | апрель | w
+mayo | май | w
+junio | июнь | w
+julio | июль | w
+agosto | август | w
+septiembre | сентябрь | w
+octubre | октябрь | w
+noviembre | ноябрь | w
+diciembre | декабрь | w
+el año | год | p
+el cumpleaños | день рождения | p
+uno / una | один | p
+dos | два | w
+tres | три | w
+cuatro | четыре | w
+cinco | пять | w
+seis | шесть | w
+siete | семь | w
+ocho | восемь | w
+nueve | девять | w
+diez | десять | w
+once | одиннадцать | w
+doce | двенадцать | w
+trece | тринадцать | w
+catorce | четырнадцать | w
+quince | пятнадцать | w
+dieciséis | шестнадцать | w
+diecisiete | семнадцать | w
+dieciocho | восемнадцать | w
+diecinueve | девятнадцать | w
+veinte | двадцать | w
+veintiuno | двадцать один | w
+treinta | тридцать | w
+cuarenta | сорок | w
+cincuenta | пятьдесят | w
+sesenta | шестьдесят | w
+setenta | семьдесят | w
+ochenta | восемьдесят | w
+noventa | девяносто | w
+cien / ciento | сто | p
+mil | тысяча | w
+@8 Путешествия и транспорт
+el viaje | поездка | p
+las vacaciones | отпуск, каникулы | p
+estar de vacaciones | быть в отпуске | p
+pasar las vacaciones | проводить отпуск | p
+pasar tiempo | проводить время | p
+visitar ciudades / museos | посещать города / музеи | p
+pasear por las calles | гулять по улицам | p
+hacer fotos | фотографировать | p
+probar comida típica | пробовать местную еду | p
+nadar en el mar | плавать в море | p
+ir a la playa | идти на пляж | p
+hacer turismo | осматривать достопримечательности | p
+ir a la montaña | поехать в горы | p
+el hotel | отель | p
+la playa | пляж | p
+el mar | море | p
+la montaña | гора | p
+la naturaleza | природа | p
+el tren | поезд | p
+el coche | машина | p
+el avión | самолёт | p
+el autobús / el bus | автобус | p
+la bicicleta / la bici | велосипед | p
+el metro | метро | p
+ir en tren / coche / avión / bus | ехать поездом / на машине / лететь / ехать автобусом | p
+rápido / rápida | быстрый | p
+tranquilo / tranquila | спокойный | p
+peligroso / peligrosa | опасный | p
+interesante | интересный | w
+todo incluido | всё включено | p
+@9 Дом, места, прочие слова
+la casa | дом | p
+en casa | дома | p
+el trabajo | работа | p
+la oficina | офис | p
+la universidad | университет | p
+la biblioteca | библиотека | p
+la discoteca | дискотека | p
+el gimnasio | спортзал | p
+el supermercado | супермаркет | p
+el centro comercial | торговый центр | p
+el cine | кино | p
+el parque | парк | p
+el restaurante | ресторан | p
+la cafetería | кафе, столовая | p
+la ciudad | город | p
+el centro | центр | p
+la calle | улица | p
+el polideportivo | спорткомплекс | p
+el piso | квартира | p
+el colegio | школа | p
+la tienda | магазин | p
+la ducha | душ | p
+el libro | книга | p
+el capítulo | глава; серия | p
+la música | музыка | p
+la canción | песня | p
+la serie | сериал | p
+la película | фильм | p
+la televisión / la tele | телевизор | p
+el periódico | газета | p
+el correo | почта | p
+el ordenador | компьютер | p
+el teléfono | телефон | p
+el mensaje | сообщение | p
+el gato / la gata | кот / кошка | p
+el perro / la perra | пёс / собака | p
+el plan | план | p
+el regalo | подарок | p
+el deseo | желание | p
+el árbol | дерево | p
+la palabra | слово | p
+el nombre | имя | p
+la cosa | вещь | p
+el euro | евро | p
+el deporte | спорт | p
+la clase | урок, занятие | p
+la tarea | домашнее задание | p
+la profesión | профессия | p
+la fiesta | вечеринка | p
+el picnic | пикник | p
+la vida | жизнь | p
+la lluvia | дождь | p
+la nieve | снег | p
+mojado / mojada | мокрый | p
+el tiempo (qué tiempo hace?) | погода | p
+hace frío / calor | холодно / жарко | p
+hace sol | солнечно | p
+hace viento | ветрено | p
+hace buen / mal tiempo | хорошая / плохая погода | p
+hace fresco | прохладно | p
+hace ... grados | … градусов | p
