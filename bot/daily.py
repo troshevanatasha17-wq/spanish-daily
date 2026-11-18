@@ -244,7 +244,7 @@ def sync_subscribers(token):
             elif status in ("kicked", "left", "restricted"):
                 chats.discard(cid)
             continue
-        for key in ("channel_post", "edited_message", "edited_channel_post", "business_message"):
+        for key in ("message", "edited_message", "channel_post", "edited_channel_post", "business_message"):
             m = u.get(key)
             if m and m.get("chat"):
                 cid = m["chat"]["id"]
