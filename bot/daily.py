@@ -84,7 +84,7 @@ def mcq_word(word, pool, rnd, direction):
     if direction == "en-ru":
         q = f"Что значит «{word['en']}»?"
     else:
-        q = f"Как по-английски: «{word['ru']}»?"
+        q = f"Как по-испански: «{word['ru']}»?"
     return dict(text=q, options=opts, answer=opts.index(word[dst]), explain=f"{word['en']} — {word['ru']}")
 
 
@@ -104,9 +104,9 @@ def page_questions(p):
 
     w = p["words"]
     qs.append(dict(sec="Словарь: 15 слов и выражений", g=6))
-    qs.append(dict(id="v1", type="match", kind="Сопоставьте выражение и перевод", text="Английский → русский",
+    qs.append(dict(id="v1", type="match", kind="Сопоставьте выражение и перевод", text="Испанский → русский",
                    pairs=[[x["en"], x["ru"]] for x in w[0:5]], explain="Повторите эти слова в словаре конспекта."))
-    qs.append(dict(id="v2", type="match", kind="Сопоставьте перевод и выражение", text="Русский → английский",
+    qs.append(dict(id="v2", type="match", kind="Сопоставьте перевод и выражение", text="Русский → испанский",
                    pairs=[[x["ru"], x["en"]] for x in w[5:10]], explain="Повторите эти слова в словаре конспекта."))
     for i, x in enumerate(w[10:15]):
         m = mcq_word(x, p["all_words"], rnd, "en-ru")
@@ -189,18 +189,111 @@ def telegram_payloads(p):
                                                                    [dict(text="📖 Конспект и словарь", url=base)]])))]
 
 
-def send(payloads):
+# ---------- подписчики ----------
+SUBS_FILE = ROOT / "data" / "subscribers.json"
+
+WELCOME = ("¡Hola! 👋 Ты подписан(а) на ежедневное повторение испанского.\n\n"
+           "Каждый день в 08:00 по Москве я присылаю тему дня с правилом, 15 слов "
+           "и чек-лист с заданиями.\n\n"
+           "Чтобы отписаться — просто заблокируй бота.")
+
+
+def load_subscribers():
+    if SUBS_FILE.exists():
+        try:
+            return set(json.loads(SUBS_FILE.read_text(encoding="utf-8"))["chats"])
+        except Exception:
+            pass
+    return set()
+
+
+def save_subscribers(chats):
+    SUBS_FILE.write_text(json.dumps({"chats": sorted(chats)}, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
+
+
+def tg_post(token, method, data, timeout=30):
     import requests
-    token, chat = os.environ.get("TELEGRAM_TOKEN"), os.environ.get("TELEGRAM_CHAT_ID")
-    if not token or not chat:
-        sys.exit("Нет TELEGRAM_TOKEN или TELEGRAM_CHAT_ID (добавьте их в Secrets репозитория).")
-    for method, data in payloads:
-        data = dict(data, chat_id=chat)
-        r = requests.post(f"https://api.telegram.org/bot{token}/{method}", json=data, timeout=30)
-        if not r.ok or not r.json().get("ok"):
-            sys.exit(f"Telegram {method}: {r.status_code} {r.text}")
-        time.sleep(0.6)
-    print(f"Отправлено сообщений: {len(payloads)}")
+    return requests.post(f"https://api.telegram.org/bot{token}/{method}", json=data, timeout=timeout)
+
+
+def sync_subscribers(token):
+    """Читает getUpdates: добавляет новых подписчиков, убирает заблокировавших.
+    Возвращает (все chat_id, новые chat_id)."""
+    chats = load_subscribers()
+    admin = os.environ.get("TELEGRAM_CHAT_ID")
+    if admin:
+        try:
+            chats.add(int(admin))
+        except ValueError:
+            pass
+    new = set()
+    r = tg_post(token, "getUpdates", {"timeout": 0})
+    j = r.json() if r.ok else {}
+    if not j.get("ok"):
+        print(f"getUpdates не удался ({r.status_code}), работаю с сохранённым списком.")
+        return chats, new
+    for u in j["result"]:
+        mcm = u.get("my_chat_member")
+        if mcm and mcm.get("chat"):
+            cid = mcm["chat"]["id"]
+            status = (mcm.get("new_chat_member") or {}).get("status", "")
+            if status in ("member", "administrator"):
+                if cid not in chats:
+                    new.add(cid)
+                chats.add(cid)
+            elif status in ("kicked", "left", "restricted"):
+                chats.discard(cid)
+            continue
+        for key in ("channel_post", "edited_message", "edited_channel_post", "business_message"):
+            m = u.get(key)
+            if m and m.get("chat"):
+                cid = m["chat"]["id"]
+                if cid not in chats:
+                    new.add(cid)
+                chats.add(cid)
+                break
+    return chats, new
+
+
+def broadcast(token, payloads, chats):
+    """Шлёт payloads всем чатам. Возвращает (доставлено, заблокировавшие)."""
+    ok, blocked = 0, set()
+    for cid in sorted(chats):
+        for method, data in payloads:
+            try:
+                r = tg_post(token, method, dict(data, chat_id=cid))
+            except Exception as e:
+                print(f"  {cid}: ошибка сети: {e}")
+                continue
+            if r.ok and r.json().get("ok"):
+                ok += 1
+            else:
+                print(f"  {cid}: {r.status_code} {r.text[:200]}")
+                if r.status_code in (400, 403):
+                    blocked.add(cid)
+                    break
+            time.sleep(0.15)
+    return ok, blocked
+
+
+def send(payloads):
+    token = os.environ.get("TELEGRAM_TOKEN")
+    if not token:
+        sys.exit("Нет TELEGRAM_TOKEN (добавьте его в Secrets репозитория).")
+    chats, new = sync_subscribers(token)
+    if not chats:
+        sys.exit("Список подписчиков пуст: напишите боту /start и запустите ещё раз.")
+    print(f"Подписчиков: {len(chats)} (новых: {len(new)})")
+    ok, blocked = broadcast(token, payloads, chats)
+    if new - blocked:
+        wok, wblocked = broadcast(token, [("sendMessage", dict(text=WELCOME))], new - blocked)
+        print(f"Приветствие отправлено: {wok}")
+        blocked |= wblocked
+    if blocked:
+        chats -= blocked
+        print(f"Отписались/заблокировали: {len(blocked)}")
+    save_subscribers(chats)
+    print(f"Доставлено сообщений: {ok} из {len(payloads) * len(chats)}")
 
 
 def main():
